@@ -11,8 +11,8 @@ def CountingSortTest(obj, arr):
     print(is_sorted(ans))
 
 
-def bucket_sort(obj, arr, n, length=1, mod=1, divi=1):
-    res = obj.bucket_sort(arr, n, length, mod, divi)
+def bucket_sort(obj, arr, n, length=1, mod=float('inf')):
+    res = obj.bucket_sort(arr, n, length, mod)
     print(res)
     print(is_sorted(res))
 
