@@ -1,6 +1,8 @@
 from DP.test import cal_test
 
 
+# 逆序数
+
 class ReverseOrderNumber:
     def calculate(self, string: str) -> int:
         length = len(string)

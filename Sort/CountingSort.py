@@ -16,11 +16,11 @@ class CountingSort(object):
 
 
 if __name__ == '__main__':
-    from Sort.test import CountingSortTest
-
-    CountingSortTest(CountingSort, [2, 5, 3, 0, 2, 3, 0, 3])
-    CountingSortTest(CountingSort, [100, 23, 4, 3, 2, 6, 88, 5, 9, 1, 4, 3, 6])
-    CountingSortTest(CountingSort, [1000, 34, 666, 4, 3, 4, 26, 634, 7, 57, 3, 52, 5, 3, 0, 2, 3, 0, 3])
+    from Sort.test import Test
+    test = Test()
+    test.counting_sort(CountingSort, [2, 5, 3, 0, 2, 3, 0, 3])
+    test.counting_sort(CountingSort, [100, 23, 4, 3, 2, 6, 88, 5, 9, 1, 4, 3, 6])
+    test.counting_sort(CountingSort, [1000, 34, 666, 4, 3, 4, 26, 634, 7, 57, 3, 52, 5, 3, 0, 2, 3, 0, 3])
     # 当数组的元素值太大时，速度回非常慢。。。
     # CountingSortTest(CountingSort, [100000000, 100000, 2, 5, 3, 0, 2, 3, 0, 3])
     # 极大占用内存。
