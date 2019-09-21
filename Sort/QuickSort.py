@@ -26,11 +26,13 @@ class QuickSort:
 
 if __name__ == "__main__":
     from Sort.test import Test
+
     test = Test()
     test.quick_sort(QuickSort, [3, 4, 2, 5, 6, 7, 22, 11, 4, 1, 1])
     test.quick_sort(QuickSort, [10, 9, 8, 7, 6, 5, 4, 3, 2, 1])
     test.quick_sort(QuickSort,
-              [1, 3, 4, 2, 1, 3, 45, 5, 6, 8, 10, 11, 12, 13, 14, 15, 30, 31, 4, 6, 2, 3, 45, 1, 2, 3, 6, 7, 4, 4])
+                    [1, 3, 4, 2, 1, 3, 45, 5, 6, 8, 10, 11, 12, 13, 14, 15, 30, 31, 4, 6, 2, 3, 45, 1, 2, 3, 6, 7, 4,
+                     4])
     test.quick_sort(QuickSort, [1, 5, 4, 2, 5, 6, 7, 3, 4, 9, 1, 23, 6, 4, 2, 88, 4])
     test.quick_sort(QuickSort, [1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
     test.quick_sort(QuickSort, [2, 8, 7, 1, 3, 5, 6, 4])
