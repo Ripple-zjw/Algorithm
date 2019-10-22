@@ -7,7 +7,6 @@ class CircleQueue:
         self.__head = -1
         self.__tail = -1
         self.__data = [None] * self.__k
-        
 
     def enQueue(self, value: int) -> bool:
         """
@@ -32,7 +31,6 @@ class CircleQueue:
             return True
         self.__head = (self.__head + 1) % self.__k
         return True
-        
 
     def Front(self) -> int:
         """
@@ -55,7 +53,6 @@ class CircleQueue:
         Checks whether the circular queue is empty or not.
         """
         return self.__head == -1
-        
 
     def isFull(self) -> bool:
         """
