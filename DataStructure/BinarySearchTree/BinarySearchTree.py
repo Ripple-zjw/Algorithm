@@ -125,19 +125,25 @@ class BinarySearchTree:
 
 
 if __name__ == '__main__':
-    bst = BinarySearchTree(60)
-    from random import randint
-    for i in range(30):
-        bst.insert(randint(1, 100))
-    bstList = bst.inorder_tree()
-    # print(bst.minimum())
-    # print(bst.maximum())
-    print(bstList)
-    bst.delete(bstList[3])
-    bst.delete(bstList[4])
-    bst.delete(bstList[5])
-    bstList = bst.inorder_tree()
-    print(bstList)
-    print(bst.successor(bstList[3]).val)
-    print(bst.predecessor(bstList[23]).val)
-    print(bstList[23])
+    bst = BinarySearchTree(1)
+    # from random import randint
+    # for i in range(30):
+    #     bst.insert(randint(1, 100))
+    # bstList = bst.inorder_tree()
+    # # print(bst.minimum())
+    # # print(bst.maximum())
+    # print(bstList)
+    # bst.delete(bstList[3])
+    # bst.delete(bstList[4])
+    # bst.delete(bstList[5])
+    # bstList = bst.inorder_tree()
+    # print(bstList)
+    # print(bst.successor(bstList[3]).val)
+    # print(bst.predecessor(bstList[23]).val)
+    # print(bstList[23])
+    from time import perf_counter
+    st = perf_counter()
+    for i in range(30001):
+        bst.insert(i)
+    bst.search(30000)
+    print(perf_counter() - st)
