@@ -120,7 +120,6 @@ class RedBlackTree:
         z = self.search(val)
         y = z
         y_origin = y.color
-        x = self.nil
         if z.left is self.nil:
             x = z.right
             self.transplant(z, z.right)
@@ -214,7 +213,7 @@ class RedBlackTree:
             y = y.parent
         return y.val
 
-    def predecessor(self, val: int) -> int:
+    def predecessor(self, val: int):
         z = self.search(val)
         if z is None:
             return z
@@ -256,9 +255,9 @@ if __name__ == '__main__':
     # print(rbt.search(50).val)
     # print(rbt.search(100).val)
     from time import perf_counter
-    st = perf_counter()
-    for i in range(50001):
-        rbt.insert(i)
-    rbt.search(35000)
-    print(perf_counter() - st)
 
+    for i in range(500000):
+        rbt.insert(i)
+    st = perf_counter()
+    print(rbt.search(415000).val)
+    print(perf_counter() - st)
